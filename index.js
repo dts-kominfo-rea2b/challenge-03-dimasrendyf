@@ -22,10 +22,9 @@ const dataBelanjaan = [
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = (dataBelanjaan) => {
-  for (const belanja of dataBelanjaan) {
-    console.log(`${belanja.nama} x ${belanja.kuantitas}`);
-  }
-
+  return dataBelanjaan.map((dataBelanja) => {
+    return `- ${dataBelanja.nama} x ${dataBelanja.kuantitas}`;
+  });
 };
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
